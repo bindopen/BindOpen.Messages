@@ -1,4 +1,4 @@
-﻿using BindOpen.Messages.Email.Connectors;
+﻿using BindOpen.Messages.Email;
 using BindOpen.Scoping;
 
 namespace BindOpen.Messages.Email;

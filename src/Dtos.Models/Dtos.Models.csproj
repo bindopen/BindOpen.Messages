@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <AssemblyName>BindOpen.Messages.IO.Dtos</AssemblyName>
-    <PackageId>BindOpen.Messages.IO.Dtos</PackageId>
+    <TargetFramework>net11.0</TargetFramework>
+    <AssemblyName>BindOpen.Messages.Dtos.Models</AssemblyName>
+    <PackageId>BindOpen.Messages.Dtos.Models</PackageId>
     <Product>BindOpen.Messages</Product>
     <Company>BindOpen</Company>
-    <Copyright>Copyright © BindOpen 2011-2025</Copyright>
+    <Copyright>Copyright © BindOpen 2011-2026</Copyright>
     <Description>A package to easily deal with feeds.</Description>
     <Authors>Sumer Team</Authors>
     <RootNamespace>BindOpen.Messages.Feeds</RootNamespace>
@@ -20,7 +20,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>BindOpen.Messages.IO.Dtos.xml</DocumentationFile>
+    <DocumentationFile>BindOpen.Messages.Dtos.Models.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -39,12 +39,12 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="BindOpen.IO.Dtos" Version="1.2.170" />
+    <PackageReference Include="BindOpen.Dtos" Version="1.3.1" />
     <PackageReference Include="MTT" Version="0.7.2" />
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\Abstractions\Abstractions.csproj" />
+    <ProjectReference Include="..\Messages\Messages.csproj" />
   </ItemGroup>
 
 </Project>
