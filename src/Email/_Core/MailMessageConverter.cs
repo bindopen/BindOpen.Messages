@@ -18,7 +18,7 @@ public static class MailMessageConverter
         {
             if (string.IsNullOrEmpty(message.From?.Email))
             {
-                log?.AddEvent(EventKinds.Error, "Recipient email missing");
+                log?.AddEvent(BdoEventKinds.Error, "Recipient email missing");
             }
             else
             {

@@ -2,7 +2,7 @@
 using BindOpen.Logging;
 using BindOpen.Logging.Loggers;
 using BindOpen.Messages.Contacts;
-using BindOpen.Messages.Email.Connectors;
+using BindOpen.Messages.Email;
 using BindOpen.Messages.Tests;
 using BindOpen.Scoping;
 using Bogus;
@@ -107,7 +107,7 @@ public class EmailTests
         // Message without recipient emails
 
         var log = BdoLogging.NewLog()
-            .WithLogger(BdoLogging.NewLogger<BdoTraceLogger>());
+            .WithLoggers(BdoLogging.NewLogger<BdoTraceLogger>());
 
         message = BdoMessages.NewSendingMessage("<subject>", "<body>")
             .WithFrom(BdoMessages.NewContact().WithEmail("toto@gmail.com"))

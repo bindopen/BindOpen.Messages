@@ -8,7 +8,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
 
-namespace BindOpen.Messages.Email.Connectors;
+namespace BindOpen.Messages.Email;
 
 
 /// <summary>
@@ -94,7 +94,7 @@ public class BdoSmtpConnection : BdoConnection, ITBdoConnection<IBdoSendingMessa
                 }
                 catch (Exception ex)
                 {
-                    log?.AddEvent(EventKinds.Exception, "Could not send email", ex.ToString());
+                    log?.AddEvent(BdoEventKinds.Exception, "Could not send email", ex.ToString());
                 }
             }
 
