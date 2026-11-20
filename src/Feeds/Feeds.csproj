@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     <AssemblyName>BindOpen.Messages.Feeds</AssemblyName>
     <PackageId>BindOpen.Messages.Feeds</PackageId>
     <Product>BindOpen.Messages</Product>
     <Company>BindOpen</Company>
-    <Copyright>Copyright © BindOpen 2011-2025</Copyright>
+    <Copyright>Copyright © BindOpen 2011-2026</Copyright>
     <Description>A package to easily deal with feeds.</Description>
     <Authors>Sumer Team</Authors>
     <RootNamespace>BindOpen.Messages.Feeds</RootNamespace>
@@ -39,8 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Abstractions\Abstractions.csproj" />
-    <ProjectReference Include="..\IO.Dtos\IO.Dtos.csproj" />
+    <ProjectReference Include="..\Dtos.Models\Dtos.Models.csproj" />
   </ItemGroup>
 
 </Project>

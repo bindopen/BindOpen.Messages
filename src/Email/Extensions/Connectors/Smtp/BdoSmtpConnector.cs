@@ -3,7 +3,7 @@ using BindOpen.Logging;
 using BindOpen.Scoping;
 using BindOpen.Scoping.Connectors;
 
-namespace BindOpen.Messages.Email.Connectors;
+namespace BindOpen.Messages.Email;
 
 /// <summary>
 /// This class represents a SMTP email connector.

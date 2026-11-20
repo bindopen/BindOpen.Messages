@@ -1,4 +1,5 @@
 ﻿using BindOpen.Data;
+using BindOpen.Data.Objects;
 using BindOpen.Scoping.Entities;
 using System;
 using System.Collections.Generic;
